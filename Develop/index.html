@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Initial generator test inspired by 
+      https://www.youtube.com/watch?v=eepZz8C60RU&t=3s
+    <script type="text/javascript">
+      var password = document.getElementById("password");
+
+      //onclick goes here
+      function genPassword() {
+      var chars = "0123456789abcdefghijklmnopqrstuvwxyz !#$%&'()*+,-./:;<=>?@[\]^_`{|}ABCDEFGHIJKLMNOPQRSTUVWXYZ~"
+          
+      var passwordLength = 11;
+      var password = "";
+
+
+
+      for (var i = 0; i <= passwordLength; i++){
+          var randomNumber = Math.floor(Math.random() * chars.length);
+          //loops random numbers, these numbers correlate to the chars eg. 0 = 0, 1 = 1, 11 = b, 30 = u and so on
+          console.log(randomNumber);
+
+          //concencates empty password to randomNumber
+          password += chars.substring(randomNumber, randomNumber +1);
+          
+          //log password
+          console.log(password)
+
+          }
+          //now apply it 
+          document.getElementById("password").value = password;
+
+      }
+      console.log(password);
+
+  </script> 
+
+-->
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
